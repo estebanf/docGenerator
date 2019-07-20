@@ -1,0 +1,22 @@
+{
+  "name": "docgenerator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@ronomon/utimes": "^2.3.1",
+    "docx-pdf": "0.0.1",
+    "docxtemplater": "^3.13.6",
+    "faker": "^4.1.0",
+    "jszip": "^2.6.1",
+    "minimist": "^1.2.0",
+    "moment": "^2.24.0",
+    "promise": "^8.0.3",
+    "word2pdf": "^1.0.7"
+  }
+}
