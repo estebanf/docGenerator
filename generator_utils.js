@@ -1,5 +1,6 @@
 var faker = require('faker');
 var moment = require('moment');
+var slugify = require('slugify')
 
 var civil_statuses = ['Married','Single','Divorced','Windowed']
 var positions= ["Accounts receivable/payable specialist","Assessor","Auditor","Bookkeeper","Budget analyst","Cash manager","Chief financial officer","Controller","Credit manager","Tax specialist","Treasurer","Benefits officer","Compensation analyst","Employee relations specialist","HR coordinator","HR specialist","Retirement plan counselor","Staffing consultant","Union organizer","Certified financial planner","Chartered wealth manager","Credit analyst","Credit manager","Financial analyst","Hedge fund manager","Hedge fund principal","Hedge fund trader","Investment advisor","Investment banker","Investor relations officer","Leveraged buyout investor","Loan officer","Mortgage banker","Mutual fund analyst","Portfolio management marketing","Portfolio manager","Ratings analyst","Stockbroker","Trust officer","Business systems analyst","Content manager","Content strategist","Database administrator","Digital marketing manager","Full stack developer","Information architect","Marketing technologist","Mobile developer","Project manager","Social media manager","Software engineer","Systems engineer","Software developer","Systems administrator","User interface specialist","Web analytics developer","Web developer","Webmaster","Actuary","Claims adjuster","Damage appraiser","Insurance adjuster","Insurance agent","Insurance appraiser","Insurance broker","Insurance claims examiner","Insurance investigator","Loss control specialist","Underwriter","Business broker","Business transfer agent","Commercial appraiser","Commercial real estate agent","Commercial real estate broker","Real estate appraiser","Real estate officer","Residential appraiser","Residential real estate agent","Residential real estate broker"]
@@ -37,7 +38,7 @@ var fileData = function(filename){
   var btime_u = btime.valueOf();
 
   return {
-    fileName: filename,
+    fileName: slugify(filename),
     btime: btime_u,
     mtime: mtime_u,
     atime: atime_u
