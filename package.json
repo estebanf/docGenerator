@@ -13,7 +13,7 @@
     "creditcard-generator": "0.0.7",
     "docxtemplater": "^3.13.6",
     "faker": "^4.1.0",
-    "jszip": "^2.6.1",
+    "jszip": "^3.8.0",
     "minimist": "^1.2.0",
     "moment": "^2.24.0",
     "promise": "^8.0.3",
